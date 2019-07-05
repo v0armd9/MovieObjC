@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DAMovie : NSObject
 
 @property (nonatomic, copy, readonly) NSString * title;
-@property (nonatomic, copy, readonly) NSString * rating;
+@property (nonatomic, readonly) double rating;
 @property (nonatomic, copy, readonly) NSString * overview;
 
-- (instancetype)initWithMovieTitle:(NSString *)name
-                            rating:(NSString *)rating
+- (instancetype)initWithMovieTitle:(NSString *)title
+                            rating:(double)rating
                           overview:(NSString *)overview;
 
 
